@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider 3D</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='dist/carrusel.css' rel='stylesheet' />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src='dist/carrusel_touchs.js'></script>
+
+        <style>
+        body {
+            background-color: #111;
+            font-family: 'Open Sans', sans-serif;
+            height: 100vh;
+            margin:0;
+            color:white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="slider ">
+            <input type="radio" name="slider" id="slider1"/>
+            <input type="radio" name="slider" id="slider2" checked=""/>
+            <input type="radio" name="slider" id="slider3"/>
+            <input type="radio" name="slider" id="slider4"/>
+            <input type="radio" name="slider" id="slider5"/>
+            
+            <div class="thumbs">
+                <div class="thumb thumb10">
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo1.jpg)"></div>
+                </div>
+                
+                <div class="thumb thumb10">
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo2.jpg)"></div>
+                </div>
+                
+                <div class="thumb thumb10">
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo3.jpg)"></div>
+                </div>
+                
+                <div class="thumb thumb10">
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo4.jpg)"></div>
+                </div>
+                
+                <div class="thumb thumb10">
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                    <div class="img" style="background-image: url(fondo5.jpg)"></div>
+                </div>
+            </div>
+            
+            <div class="control">
+                <label for="slider1"></label>
+                <label for="slider2"></label>
+                <label for="slider3"></label>
+                <label for="slider4"></label>
+                <label for="slider5"></label>
+            </div>
+        </div>
+        
+        
+        <div style="padding:20px;">
+            <input type="checkbox" id="navround"/>
+            <label for="navround">Nav Round</label>
+            
+            <br/>
+            <br/>
+            <input type="checkbox" id="lighttheme"/>
+            <label for="lighttheme">Light theme</label>
+            
+            <br/>
+            <br/>
+            <input type="radio" name="speed" class="speed" value="slow" id="speed1"/>
+            <label for="speed1">Transition slow speed</label>
+            
+            <input type="radio" name="speed" checked="" class="speed" value="" id="speed2"/>
+            <label for="speed2">Transition normal speed</label>
+            
+            <input type="radio" name="speed" class="speed" value="fast" id="speed3"/>
+            <label for="speed3">Transition fast speed</label>
+            
+            <br/>
+            <br/>
+            <input type="radio" name="effect" class="effect" value="" id="effect1" checked=""/>
+            <label for="effect1">Transition SliderDown</label>
+            <input type="radio" name="effect" class="effect" value="sliderBounce" id="effect2"/>
+            <label for="effect2">Transition SliderBounce</label>
+            <input type="radio" name="effect" class="effect" value="sliderFall" id="effect3"/>
+            <label for="effect3">Transition SliderFall</label>
+            <input type="radio" name="effect" class="effect" value="sliderWave" id="effect4"/>
+            <label for="effect4">Transition SliderWave</label>
+            <input type="radio" name="effect" class="effect" value="sliderSlide" id="effect5"/>
+            <label for="effect5">Transition SliderSlide</label>
+        </div>
+        
+        <script>
+            $(document).ready(function(){
+                
+                $('#navround').on("change", function(){
+                    if(!$(this).is(":checked")){
+                        $('.slider').removeClass("nav-round");
+                    }else{
+                        $('.slider').addClass("nav-round");
+                    }
+                });
+                
+                $('#lighttheme').on("change", function(){
+                    if(!$(this).is(":checked")){
+                        $('.slider').removeClass("light");
+                    }else{
+                        $('.slider').addClass("light");
+                    }
+                });
+                
+                $('#lighttheme').on("change", function(){
+                    if(!$(this).is(":checked")){
+                        $('.slider').removeClass("light");
+                    }else{
+                        $('.slider').addClass("light");
+                    }
+                });
+                
+                $('.speed').on("change", function(){
+                    $('.slider').removeClass("slow");
+                    $('.slider').removeClass("fast");
+                    $('.slider').addClass($(this).val());
+                });
+                
+                $('.effect').on("change", function(){
+                    $('.slider').removeClass("sliderBounce");
+                    $('.slider').removeClass("sliderFall");
+                    $('.slider').removeClass("sliderWave");
+                    $('.slider').removeClass("sliderSlide");
+                    $('.slider').addClass($(this).val());
+                });
+            });
+        </script>
+    </body>
+</html>
